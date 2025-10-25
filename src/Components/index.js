@@ -1,0 +1,18 @@
+export {default as Header} from './Sections/Header/Header'
+export {default as Container} from './Sections/Container/Container'
+export {default as Hero} from './Sections/Hero/Hero'
+export {default as Projects} from './Sections/Projects/Projects'
+export {default as Skills} from './Sections/Skills/Skills'
+export {default as About} from './Sections/About/About'
+export {default as Contact} from './Sections/Contact/Contact'
+export {default as Footer} from './Sections/Footer/Footer'
+export {default as SectionWrapper} from './Sections/SectionWrapper/SectionWrapper'
+export {default as PrivateRoute} from './Sections/PrivateRoure/PrivateRoute'
+export {default as MainPage} from './Pages/MainPage'
+export {default as Login} from './Pages/Login'
+export {default as Dashboard} from './Pages/Dashboard'
+export {default as LoaderScreen} from './Pages/LoaderScreen'
+
+
+export {default as Card} from './Card/Card'
+export {default as Slider} from './Slider/Slider'

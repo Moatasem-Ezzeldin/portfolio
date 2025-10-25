@@ -1,0 +1,104 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.2rem;
+}
+.header .menu {
+    display: none;
+}
+.header .nav {
+    background-color: var(--bg-header);
+    padding: 0.77rem 1.6rem;
+    border-radius: 30px;
+    box-shadow: 1px 1px 40px #2323242a;
+}
+.header .list {
+    display: flex;
+    gap: 16px;
+}
+.header a {
+    color: var(--color-title);
+    opacity: 0.9;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+.header a:hover {
+    color: var(--color-blue);
+    opacity: 1;
+}
+.header button {
+    font-size: 1.2rem;
+}
+.header .fixed {
+    position: fixed;
+    inset: 0;
+    background-color: var(--bg-header);
+}
+.header .fixed .model {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--color-secondary);
+    scale: 1;
+    animation: moveModel 0.8s 1;
+}
+.header .fixed .model li {
+    border-bottom: 1px solid var(--color-borde);
+    padding-bottom: 0.77rem;
+    padding-top: 0.5rem;
+}
+.header .fixed .model li:last-child {
+    border: nono;
+}
+.header .fixed .model li:first-child {
+    text-align: end;
+     padding-bottom: 0;
+    padding-top: 0;
+    border: none;
+}
+.header .fixed .model a {
+    font-size: 1rem;
+}
+.header .icon-menu,
+.header .icon-mode {
+    background-color: var(--bg-header);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.4rem;
+    width: 2.4rem;
+    border-radius: 50%;
+    color: var(--color-subtitle);
+    border: 1px solid rgba(244, 165, 96, 0.249);
+    transition: all 0.2s ease-in-out;
+}
+.header .icon-menu:hover,
+.header .icon-mode:hover {
+    border: 1px solid rgb(244, 165, 96);
+    color: var(--color-title);
+}
+.header .icon-close {
+    font-size: 1.3rem;
+    color: var(--color-subtitle);
+    transition: all 0.3s ease-in-out;
+} 
+.header .icon-close:hover {
+    font-size: 1.6rem;
+    color: crimson;
+    rotate: 180deg;
+}
+.header .icon-menu {display: none;} 
+@media (max-width:768px) {
+    .header .nav {display: none;}
+    .header .icon-menu {display: flex;}
+}
+@keyframes moveModel {
+    0% {scale: 0;}
+    60% {scale: 1.2;}
+    100%{scale: 1;}
+}

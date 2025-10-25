@@ -1,0 +1,59 @@
+.card {
+    border: 1px solid rgba(93, 100, 252, 0.3);
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    background-image: linear-gradient(rgba(255,255,255, 0.05), rgba(255,255,255, 0.05));
+    animation: moveCard 0.8s 1;
+}
+.card:hover {
+    border: 1px solid var(--color-blue);
+    rotate: 1deg;
+    scale: 1.01;
+}
+.card img {
+    width: 266px;
+    border-radius: 5px;
+}
+.card .info-card {
+    width: 266px;
+    padding: 1rem 0.4rem;
+
+}
+.card .title {
+    color: var(--color-title);
+    margin-bottom: 0.7rem;
+}
+.card .desc {
+    color: var(--color-subtitle);
+    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+    line-height: 1rem;
+}
+.card .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card .links .left a {
+    color: var(--color-subtitle); 
+    font-size: 1.6rem; 
+    margin-right: 0.7rem;
+    transition: all 0.3s ease-in-out;
+}
+.card .links .left a:hover {
+    color: var(--color-title);
+    scale: 1.01;
+}
+.card .links .right { 
+    color: var(--color-blue);
+}
+.card .links .right a{
+    font-size: 1.6rem;
+    color: var(--color-blue);
+    margin-right: 0.5rem;
+}
+@keyframes moveCard {
+    0% {scale: 0;}
+    60% {scale: 1.03;}
+    100%{scale: 1;}
+}
